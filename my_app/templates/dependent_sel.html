@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>emp_SELECT</title>
+</head>
+<body>
+    {% for cur in res %}
+    <p>
+        {{cur.essn}},
+        {{cur.dependent_name}},
+        {{cur.sex}},
+        {{cur.bdate}},
+        {{cur.relationship}},
+    </p>
+    {% endfor %}
+
+    <form action="/DEPENDENT" method="GET">
+        <button type="submit">Back</button>
+    </form>
+</body>
+</html>

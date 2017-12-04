@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>emp_SELECT</title>
+</head>
+<body>
+    {% for cur in res %}
+    <p>
+        {{cur.pname}},
+        {{cur.pnumber}},
+        {{cur.plocation}},
+        {{cur.dnum}},
+    </p>
+    {% endfor %}
+
+    <form action="/PROJECT" method="GET">
+        <button type="submit">Back</button>
+    </form>
+</body>
+</html>

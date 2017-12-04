@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEPT_LOCATION_SELECT</title>
+</head>
+<body>
+    {% for cur in res %}
+    <p>
+        {{cur.dnumber}},
+        {{cur.dlocation}},
+
+    </p>
+    {% endfor %}
+
+    <form action="/DEPT_LOCATION" method="GET">
+        <button type="submit">Back</button>
+    </form>
+</body>
+</html>

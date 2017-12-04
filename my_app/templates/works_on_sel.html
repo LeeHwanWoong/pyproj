@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEPF_LOCATION_SELECT</title>
+</head>
+<body>
+    {% for cur in res %}
+    <p>
+        {{cur.essn}},
+        {{cur.pno}},
+        {{cur.hours}},
+
+    </p>
+    {% endfor %}
+
+    <form action="/WORKS_ON" method="GET">
+        <button type="submit">Back</button>
+    </form>
+</body>
+</html>

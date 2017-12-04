@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dep</title>
+</head>
+<body>
+    <form method="POST"> {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">insert or update</button>
+    </form>
+    <form method="POST"> {% csrf_token %}
+        {{ formD.as_p }}
+        <button type="submit" name = 'delete'>DELETE</button>
+    </form>
+    <form action="/DEPARTMENT/sel" method="GET">
+        <button type="submit">SELECT</button>
+    </form>
+    <form action="/" method="GET">
+        <button type="submit">HOME</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>emp_SELECT</title>
+</head>
+<body>
+    {% for cur in res %}
+    <p>
+        {{cur.fname}},
+        {{cur.minit}},
+        {{cur.lname}},
+        {{cur.bdate}},
+        {{cur.address}},
+        {{cur.ssn}},
+        {{cur.sex}},
+        {{cur.salary}},
+        {{cur.super_ssn}},
+        {{cur.dno}},
+    </p>
+    {% endfor %}
+
+    <form action="/EMPLOYEE" method="GET">
+        <button type="submit">Back</button>
+    </form>
+</body>
+</html>
